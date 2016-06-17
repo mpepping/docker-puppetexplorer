@@ -12,20 +12,4 @@ NODE_FACTS = [
 
 UNRESPONSIVE_HOURS = 24;
 
-DASHBOARD_PANELS = [
-  {
-    name: 'Unresponsive nodes',
-    type: 'danger',
-    query: '#node.report_timestamp < @"now - 24 hours"'
-  },
-  {
-    name: 'Billable nodes' 
-    type: 'success',
-    query: '#node.billable = yes'
-  },
-  {
-    name: 'Nodes in PROD environment'
-    type: 'warning',
-    query: '#node.catalog_environment = production'
-  }
-];
+DASHBOARD_PANELS = [];
